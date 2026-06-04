@@ -413,23 +413,23 @@ export function MediaSection() {
   }, [isInView])
 
   // Framer motion variants - only for container and header elements
-  const fadeInUp = {
-    hidden: { opacity: 0, y: 30 },
-    visible: { 
-      opacity: 1, 
-      y: 0, 
-      transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] }
-    }
-  }
+  // const fadeInUp = {
+  //   hidden: { opacity: 0, y: 30 },
+  //   visible: { 
+  //     opacity: 1, 
+  //     y: 0, 
+  //     transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] }
+  //   }
+  // }
 
-  const beamContainerVariants = {
-    hidden: { opacity: 0, scale: 0.95 },
-    visible: { 
-      opacity: 1, 
-      scale: 1,
-      transition: { duration: 0.8, delay: 0.5, ease: "easeOut" }
-    }
-  }
+  // const beamContainerVariants = {
+  //   hidden: { opacity: 0, scale: 0.95 },
+  //   visible: { 
+  //     opacity: 1, 
+  //     scale: 1,
+  //     transition: { duration: 0.8, delay: 0.5, ease: "easeOut" }
+  //   }
+  // }
 
   return (
     <section
@@ -489,7 +489,7 @@ export function MediaSection() {
           <motion.div
             ref={containerRef}
             className="relative flex items-center justify-center w-full h-[460px] md:h-[500px] order-1 lg:order-2"
-            variants={beamContainerVariants}
+            // variants={beamContainerVariants}
             initial="hidden"
             animate={isInView ? "visible" : "hidden"}
           >

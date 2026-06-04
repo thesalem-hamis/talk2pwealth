@@ -3,7 +3,7 @@ import {
   HiOutlineUserGroup,
   HiOutlineBookOpen,
   HiOutlinePlayCircle,
-  HiOutlineNewspaper,
+  // HiOutlineNewspaper,
   HiOutlineSparkles,
   HiOutlineAcademicCap,
   HiOutlineFire,

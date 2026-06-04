@@ -1,6 +1,5 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import logo from "../../assets/logo-black.png";
-import { Sparkles, Zap, Star, Flame, CircleDot } from "lucide-react";
 
 const achievements = [
   "25+ YEARS OF IMPACT",
@@ -24,13 +23,15 @@ const achievements = [
 ];
 
 export default function AuthorityBar() {
-  const [active, setActive] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (entry.isIntersecting) setActive(true);
+        // You can add logic here if needed, or remove the observer entirely
+        if (entry.isIntersecting) {
+          // Do something when visible
+        }
       },
       { threshold: 0.2 }
     );
@@ -46,16 +47,12 @@ export default function AuthorityBar() {
       className="
         w-full
         overflow-hidden
-        // bg-gradient-to-r
-        // from-zinc-100
-        // via-zinc-50
-        // to-zinc-100
         bg-white
         border-b
         border-black/10
       "
     >
-      {/* AUTHORITY RIBBON */}
+      {/* REST OF YOUR COMPONENT REMAINS THE SAME */}
       <div className="flex items-center overflow-hidden">
         {/* LOGO BLOCK */}
         <div
@@ -114,13 +111,6 @@ export default function AuthorityBar() {
 
                 {/* Abstract Icon - Star with sparkle effect */}
                 <div className="text-black/90">
-                  {/* <Star 
-                    size={36} 
-                    className="inline-block md:w-10 md:h-10"
-                    strokeWidth={1.5}
-                    fill="#0052FF"
-                    fillOpacity={0.3}
-                  /> */}
                   |
                 </div>
               </div>

@@ -451,7 +451,7 @@
 
 "use client";
 
-import { useState, useEffect, useRef, useCallback } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { ArrowRight, ArrowUpRight } from "lucide-react";
 import { motion } from "motion/react";
 import { PROGRAMS, type Program } from "../../data/constants";
@@ -582,7 +582,7 @@ function DesktopCard({
         </div>
 
         <div className="mt-auto flex flex-col gap-6">
-          {program.quote && (
+          {/* {program.quote && (
             <div
               className="max-w-3xl pl-4 py-3 pr-4 rounded-xl"
               style={{
@@ -600,7 +600,7 @@ function DesktopCard({
                 </p>
               )}
             </div>
-          )}
+          )} */}
 
           <div className="flex items-center justify-between pt-2">
             <a
@@ -775,7 +775,7 @@ function MobileView({
             <p className="text-white/75 text-sm leading-relaxed mb-5">{prog.description}</p>
           </div>
 
-          {prog.quote && (
+          {/* {prog.quote && (
             <div
               className="pl-3 py-2 pr-3 rounded-lg mb-5"
               style={{
@@ -791,7 +791,7 @@ function MobileView({
                 </p>
               )}
             </div>
-          )}
+          )} */}
 
           <div className="flex items-center justify-between mt-auto">
             <a
@@ -853,7 +853,7 @@ export default function ProgramsOverview() {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-80px" }}
-          transition={{ duration: 1.4, ease: "power4.out" }}
+          // transition={{ duration: 1.4, ease: "power4.out" }}
         >
           <h1 className="w-full max-w-4xl text-4xl xs:text-5xl sm:text-6xl md:text-6xl lg:text-7xl font-extrabold tracking-[-0.06em] leading-[1.05] text-gray-900 select-none mb-6">
             Every Program. One Mission.
